@@ -5,7 +5,7 @@ golang vcipher，集成了常见的加密方法。
 ```go
 func AES(size int) (cipher.Block, []byte, error)            // AES编码
 type Cipher struct {                                    // 密码
-    C   cipher.Block		                                // 块对象
+    C   cipher.Block                                        // 块对象
     Key []byte                                              // key密码
 }
     func NewCipher(block cipher.Block, iv []byte) *Cipher   // 密码对象
